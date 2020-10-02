@@ -1,15 +1,17 @@
 import React, {useState} from "react";
+import FormattedDate from "./Date";
 import axios from "axios";
 import "./Weather.css";
 
 
-export default function Weather () {
+export default function Weather (props) {
  
   const[weatherData, setWeatherData] = useState({ready: false});
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
       ready:true,
+      date: new Date(response.data.dt * 1000),
       temperature:response.data.main.temp,
       description:response.data.weather[0].description,
       iconUrl:"http://openweathermap.org/img/wn/10d@2x.png",
@@ -59,7 +61,6 @@ export default function Weather () {
         <span id="place-city">{weatherData.city}</span> 
       </h1>
       <h2 className="current">
-        <ul/>
        <ul>
         <li>
         <div className="clearfix weather-temp">
@@ -92,7 +93,7 @@ export default function Weather () {
       <h4>
         
       <li>
-      <strong id= "today" >  Updated as of 10:42pm </strong>
+      <strong id= "today" > <FormattedDate date={weatherData.date} /> </strong>
         </li>
         
         </h4>
@@ -192,9 +193,7 @@ href="https://github.com/doctordamie4/weather-app-project"   rel="noopener noref
 
  }else{
   let apiKey ="1d4b68593b5ef58c6ebeb70b9aa9976d";
-  let city ="New York";
-  let apiUrl =`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
+  let apiUrl =`http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
    return "loading......";
  }

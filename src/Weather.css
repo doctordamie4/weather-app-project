@@ -63,7 +63,8 @@ li{
    }
   .button {
     position : relative;
-    right : 85px;
+    right : -105px;
+    bottom: 38px;
   }
   .symbols{
     font-size:16px;

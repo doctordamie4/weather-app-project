@@ -12,9 +12,11 @@ export default function Winfo(props){
        <ul>
         <li>
         <div className="clearfix weather-temp">
-          <div className="imagery">
-        <img src={props.data.iconUrl} alt={props.data.descrition}id="icon"
+          <div className="imagery-One">
+            <span className="icon-one">
+        <img src={props.data.iconUrl} alt="icon"id="icon"
         className="float-left"/>
+        </span>
         <div className="float-left">
           <Temp celsius={props.data.temperature} />
          
@@ -79,47 +81,8 @@ export default function Winfo(props){
         </div>
         </div>
         </div> 
-      <hr />
-      <div className="row weather-forecast" id="forecast">
-      <div className="row">
-<div className="clearfix weather-temp" >
-        mon
-    <span className="col-6">
-        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="" id="icon"
-        className="float-left"/>
-        </span>
-        </div>
-        <div className="clearfix weather-temp" >
-        tues
-        <span className="col-6">
-        <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="" id="icon"
-        className="float-left"/>
-        </span>
-        </div>
-        <div className="clearfix weather-temp" >
-            wed
-        <span className="col-3">
-        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" id="icon"
-        className="float-left"/>
-        </span>
-        </div>
-        <div className="clearfix weather-temp">
-        thur
-        <span className="col-4">
-        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icon"
-        className="float-left"/>
-        </span>
-        </div>
-        <div className="clearfix weather-temp">
-        <small>fri</small>
-        <span className="col-">
-        <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" id="icon"
-        className="float-left"/>
-        </span>
-        </div>
-        </div>
-</div>
 
+<hr/>
 <div className="source">
 <a href="https://github.com/doctordamie4/shecodes4"  target="_blank" rel ="noopener noreferrer" >open source code : coded by Nimah Oyeniran</a>
 </div>
@@ -129,7 +92,7 @@ This app was coded by Nimz and it's open-sourced
 href="https://github.com/doctordamie4/weather-app-project"   rel="noopener noreferrer"target="_blank" > open-sourced on Github </a>
 <script src="src/index.js"></script>
 </div>
-
 </div>
+
     );
 }

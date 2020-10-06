@@ -12,12 +12,6 @@ text-align:center;
     color: #ffffff;
 }
 
-.imagery{
-    margin: 0 auto;
-    position:relative;
-    right:-170px;
-}
-
 
 li{
     list-style: none;
@@ -28,7 +22,7 @@ li{
   border: 2px solid;
     text-align: center;
     font-family: "Courgette", cursive;
-    max-width: 650px;
+    max-width: 750px;
     padding-bottom: 15px;
     background-color: #232F55;background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
 }
@@ -74,7 +68,8 @@ li{
    .degree{
     font-size : 64px;
     color: #fff;
-  
+  position: relative;
+  right: -115px;
   }
   .whole {
     font-family: "Courgette", cursive;
@@ -116,8 +111,8 @@ li{
     display: inline;
   }
   .city {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 30px;
     color: #ffffff;
   }
   .felt{
@@ -152,7 +147,8 @@ li{
       font-size:20px;
       font-weight: 600;
       color: #ffffff;
-    
+      position: relative;
+    left:-65px;
     }
   
   .first {
@@ -163,50 +159,9 @@ li{
     color: whitesmoke;
   }
   
-  .icons {
-    font-size: 18px;
-    color: rgb(250, 250, 6);
-  }
-  .moon {
-    color: rgb(221, 253, 103);
-  }
-  .rain {
-    color: #fff;
-  }
-  .sun {
-    color: #fff;
-  }
+
   
-  .card.mon {
-    padding-top: 0;
-    position: relative;
-    top: 45px;
-  }
-  .card.tue {
-    padding-top: 50px;
-    padding-bottom: 0px;
-    position: relative;
-    bottom: 7px;
-  }
-  .card.wed {
-    padding-top: 70px;
-    padding-bottom: 0px;
-    position: relative;
-    bottom: 25px;
-  }
-  .card.thurs {
-    padding-top: 85px;
-    padding-bottom: 0px;
-    position: relative;
-    bottom: 40px;
-  }
   
-  .card.fri {
-    padding-top: 90px;
-    padding-bottom: 0px;
-    position: relative;
-    bottom: 45px;
-  }
   .weather-temp .active{
     color:#555555;
   cursor:default;

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Winfo from "./Winfo";
 import axios from "axios";
 import "./Weather.css";
-
+import WeatherForecast from "./WeatherForecast";
 
 
 export default function Weather (props) {
@@ -72,6 +72,8 @@ export default function Weather (props) {
         </div>
       </form>
       <Winfo data={weatherData}/>
+      <WeatherForecast city={weatherData.city} />
+     
       <hr /> 
       </div>
       </div>

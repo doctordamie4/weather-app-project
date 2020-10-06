@@ -55,25 +55,20 @@ export default function Winfo(props){
         </li>
         </div> 
         <div className="col-2.5">
-        <li>
-          <span id="prep">
-          Precipitation:{props.data.Precipitation} 
-          </span>
-          </li>
           </div>
         </div>
         </div>
       <br />
       <div className="weather-now">
         <div className="row">
-      <div className="col-5">
+      <div className="col-3">
         <li>
         <span id = "weather"> 
           Humidity :  {props.data.humidity}%
         </span>
          </li>
          </div>
-         <div className="col-0.5">
+         <div className="col-3">
          <li>
         <span id = "weather-wind">
          Wind:{props.data.wind} km/h

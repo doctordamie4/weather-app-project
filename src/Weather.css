@@ -21,8 +21,9 @@
 .weather-now {
    margin:0 auto;
    position:relative;
-    right:-45px;
-    bottom: 50px;
+    right:-125px;
+    bottom: 40px;
+    font-size: ;
     font-weight: 600;
     color: #ffffff;
 }
@@ -105,11 +106,16 @@ li{
     position: relative;
     bottom: -32px;
   }
-  
+  #feel-like{
+    position: relative;
+    right:-50px;
+    font-size: 20px;
+  }
   .feels {
     color: #fff;
-    font-size: 13px;
+    font-size: 23px;
     position: relative;
+  right:-35px;
     bottom:-1px;
     display: inline;
   }
@@ -139,7 +145,7 @@ li{
       font-size: 20px;
       font-weight: 500;
     position: relative;
-    right:65px;
+    right:45px;
     bottom :10px;
     font-family: "Courgette", cursive;
     color: #ffffff;

@@ -59,18 +59,8 @@ export default function Weather (props) {
       </div>
       </form>
     </div>
-   
+    <hr/>
       <br/>
-      <form id="current-place">
-        <div className="col-6">
-        <input 
-          type="button"
-          value="Current "
-          className="form-control"
-          id="current-form"
-        />
-        </div>
-      </form>
       <Winfo data={weatherData}/>
       <WeatherForecast city={weatherData.city} />
      

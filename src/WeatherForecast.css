@@ -1,5 +1,7 @@
 .WeatherForecast{
     text-align: center;
+    font-family: "Courgette", cursive;
+    color: #ffffff;
 }
 
 .imagery-One{
@@ -7,6 +9,10 @@
     left:100px;
 }
 
+.imagery{
+    position: relative;
+    right: -20px;
+}
 .icon-one{
     position: relative;
     left:100px;

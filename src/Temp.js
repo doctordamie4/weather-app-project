@@ -10,26 +10,29 @@ function showCelsius(event)  {
     event.preventDefault();
     setUnit("celsius");
 }
-    if (unit ==='celsius') {
+
+function fahrenheit () {
+    return (props.celsius * 9)/5 + 32;
+}
+    if (unit ==="celsius") {
     return(
         <div className="weather">
         <span className="degree">
         <strong id="grade">{Math.round(props.celsius)}</strong>
         <span className="symbols">
-          <a href="/" id="celsius-temp"class="active">°C </a>
+        °C
            | <a href="/" id="fahrenheit-temp" onClick={showFahrenheit}>°F</a></span>
        </span>
        </div>
     );
 }else{
-    let fahrenheit = (props.celsius * 9/5) + 32;
     return  (
         <div className="weatherTemp">
         <span className="degree">
-        <strong id="grade">{Math.round(fahrenheit)}</strong>
+        <strong id="grade">{Math.round(fahrenheit())}</strong>
         <span className="symbols">
-          <a href="/" id="celsius-temp"class="active">°C</a>
-           | <a href="/" id="fahrenheit-temp" onClick={showCelsius}>°F</a></span>
+          <a href="/" id="celsius-temp"className="signs" onClick={showCelsius}>°C</a>
+           | °F</span>
        </span>
        </div>
     );

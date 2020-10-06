@@ -4,6 +4,7 @@ import Temp from "./Temp"
 
 export default function Winfo(props){
     return (
+      <div className="info">
         <div className="Winfo">
                <h1 className="city">
         <span id="place-city">{props.data.city}</span> 
@@ -83,16 +84,11 @@ export default function Winfo(props){
         </div> 
 
 <hr/>
-<div className="source">
-<a href="https://github.com/doctordamie4/shecodes4"  target="_blank" rel ="noopener noreferrer" >open source code : coded by Nimah Oyeniran</a>
 </div>
-<div className="Footer">
-This app was coded by Nimz and it's open-sourced
-<a
-href="https://github.com/doctordamie4/weather-app-project"   rel="noopener noreferrer"target="_blank" > open-sourced on Github </a>
-<script src="src/index.js"></script>
-</div>
+
 </div>
 
     );
 }
+    
+ 
